@@ -12,7 +12,7 @@ fun square (a: Int) = a * a
 // fun incrementValue (a: Int) = a += 1
 
 // Generic function
-fun <T> printer(thing: T) {
+fun <T> printer (thing: T) {
     println(thing)
 }
 
