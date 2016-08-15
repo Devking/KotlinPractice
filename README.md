@@ -18,9 +18,11 @@ To run the application:
 
 By default, all member functions to a class are `final` (aka they cannot be overriden). To allow a function to be overriden, you **must** declare it `open`.
 
-In a derived class, to override a function, you must use the `override` keyword. Furthermore, `override` will allow that function to be overriden by a further subclass. To prevent this, you must specify `final` with `override`. An example:
+In a derived class, to override a function, you must use the `override` keyword.
 
-```
+Furthermore, `override` will allow that function to be overriden by a further subclass (aka it becomes `open` by default). To prevent this, you must specify `final` with `override`. An example:
+
+```kotlin
 open class Base {
     // Can be overriden
     open fun foo () {}
